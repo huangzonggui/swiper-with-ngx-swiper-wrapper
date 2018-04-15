@@ -1,0 +1,17 @@
+
+  <div class="content-container" fxLayout="column" fxLayoutAlign="stretch" fxFlex="auto">
+    
+    <swiper [config]="config" >
+      <div *ngFor="let slide of slides" class="swiper-slide">
+        <div fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
+          {{slide}}
+        </div>
+      </div>
+    </swiper>
+
+    <div  *ngIf="false">
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+  </div>
